@@ -1,0 +1,10 @@
+
+Project2: main.o framebuffer.h
+        gcc -o Project2 main.o -lsense -lm
+
+main.o: main.c framebuffer.h
+        gcc -c main.c
+
+clean:
+        rm*.o Project2
+
